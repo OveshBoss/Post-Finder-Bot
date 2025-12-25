@@ -13,7 +13,7 @@ async def start(bot, message):
     username = (await bot.get_me()).username
     await add_user(message.from_user.id, message.from_user.first_name)
     button = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{username}?startgroup=true')
+        InlineKeyboardButton('✪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✪', url=f'http://t.me/{username}?startgroup=true')
     ],[
         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")
